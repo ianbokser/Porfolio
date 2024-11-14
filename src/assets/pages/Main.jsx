@@ -12,6 +12,8 @@ export const Main = () => {
   const sectionRefs = useRef([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const isScrolling = useRef(false);
+  const scrollAccumulator = useRef(0);
+  const scrollTimeout = useRef(null);
 
   const scrollToSection = (index) => {
     sectionRefs.current[index]?.scrollIntoView({
@@ -21,28 +23,34 @@ export const Main = () => {
   };
 
   useEffect(() => {
-    if (!isScrolling.current) return; // Evitar scroll si está desactivado temporalmente
+    if (!isScrolling.current) return;
     scrollToSection(currentIndex);
   }, [currentIndex]);
 
   useEffect(() => {
     const handleScroll = (event) => {
-      if (isScrolling.current) return;
-
-      // Prevenir el comportamiento de scroll por defecto del navegador
       event.preventDefault();
+      scrollAccumulator.current += event.deltaY;
 
-      isScrolling.current = true; // Evitar otro scroll mientras se desplaza
+      clearTimeout(scrollTimeout.current);
 
-      if (event.deltaY > 0 && currentIndex < sectionRefs.current.length - 1) {
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-      } else if (event.deltaY < 0 && currentIndex > 0) {
-        setCurrentIndex((prevIndex) => prevIndex - 1);
-      }
+      scrollTimeout.current = setTimeout(() => {
+        if (isScrolling.current) return;
 
-      setTimeout(() => {
-        isScrolling.current = false;
-      }, 600); 
+        isScrolling.current = true;
+
+        if (scrollAccumulator.current > 0 && currentIndex < sectionRefs.current.length - 1) {
+          setCurrentIndex((prevIndex) => prevIndex + 1);
+        } else if (scrollAccumulator.current < 0 && currentIndex > 0) {
+          setCurrentIndex((prevIndex) => prevIndex - 1);
+        }
+
+        scrollAccumulator.current = 0;
+
+        setTimeout(() => {
+          isScrolling.current = false;
+        }, 500);
+      }, 100);
     };
 
     window.addEventListener('wheel', handleScroll, { passive: false });
@@ -76,9 +84,8 @@ export const Main = () => {
   return (
     <div className="bg-gray-900 min-h-screen flex justify-center max-w-screen-lg mx-auto">
       <div className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-gray-200 min-h-screen w-full max-w-screen-lg">
-        <Header />
-
-        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about min-h-screen p-5 flex-col justify-center transition-opacity duration-700">
+        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about min-h-screen pl-5 pr-5 pb-5 flex-col justify-center transition-opacity duration-700">
+          <Header />
           <div className="w-full my-6">
             <AboutMe />
           </div>
@@ -109,8 +116,9 @@ export const Main = () => {
             <ContactForm />
           </div>
         </section>
-
         <Footer />
+
+
       </div>
     </div>
   );
