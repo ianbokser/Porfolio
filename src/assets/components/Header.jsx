@@ -4,8 +4,8 @@ import { Link } from 'react-scroll';
 
 export const Header = () => {
   return (
-    <header className="fixed w-full bg-gray-800/80 shadow-md backdrop-blur-md z-50 flex justify-center">
-      <div className="flex flex-col justify-between items-center py-2">
+    <header className="bg-gray-800/80 shadow-md backdrop-blur-md">
+      <div className="w-full max-w-screen-lg mx-auto flex flex-col justify-between items-center py-2">
         <Logo />
         <nav className="flex space-x-6">
           {['Sobre Mí', 'Proyectos', 'Skills', 'Contacto'].map((section) => (
