@@ -117,8 +117,6 @@ export const Main = () => {
           </div>
         </section>
         <Footer />
-
-
       </div>
     </div>
   );
