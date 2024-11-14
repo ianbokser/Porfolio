@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Header } from '../components/Header';
-import { AboutMe } from '../components/AboutMe';
+import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Projects } from '../components/Projects';
 import { Skills } from '../components/Skills';
-import { ContactForm } from '../components/ContactForm';
+import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Footer } from '../components/Footer';
 import { Technologies } from '../components/Technologies';
 import './Main.css';

@@ -1,0 +1,28 @@
+/* Estilo de fondo arcoíris */
+.rainbow-text {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+0% {
+    background-position: 0%;
+}
+100% {
+    background-position: 400%;
+}
+}
+
+/* Círculo azul de fondo */
+.a-rainbow-text {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background-color: #bfdbfe; /* Color azul claro de fondo */
+color: #1e40af; /* Color azul oscuro para el texto */
+border-radius: 9999px; /* Hace el fondo circular */
+padding: 10px 20px; /* Ajuste de padding para el círculo */
+}
