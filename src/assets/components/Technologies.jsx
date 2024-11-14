@@ -9,13 +9,13 @@ export const Technologies = () => {
         </div>
         <div className="flex items-center flex-col mb-2">
             <div className="mt-4 flex flex-wrap gap-2 justify-center">
-                <SkillTag text="HTML" image="./src/images/HTML.png"/>
-                <SkillTag text="CSS" image="./src/images/CSS.webp"/>
-                <SkillTag text="JavaScript" image="./src/images/Javascript.png" />
-                <SkillTag text="Java" image="./src/images/Java.webp"/>
-                <SkillTag text="Assembly ARM" image="./src/images/Assembly.png" />
-                <SkillTag text="SQL" image="./src/images/SQL.png" />
-                <SkillTag text="Python" image="./src/images/Python.jpeg"/>
+                <SkillTag text="HTML" image="/images/HTML.png"/>
+                <SkillTag text="CSS" image="/images/CSS.webp"/>
+                <SkillTag text="JavaScript" image="/images/Javascript.png" />
+                <SkillTag text="Java" image="/images/Java.webp"/>
+                <SkillTag text="Assembly ARM" image="/images/Assembly.png" />
+                <SkillTag text="SQL" image="/images/SQL.png" />
+                <SkillTag text="Python" image="/images/Python.jpeg"/>
             </div>
         </div>
         <div className="flex justify-center">
@@ -23,10 +23,10 @@ export const Technologies = () => {
         </div>
         <div className="flex items-center flex-col">
             <div className="mt-4 flex flex-wrap gap-2 justify-center">
-                <SkillTag text="Node.js" image="./src/images/Node.png" />
-                <SkillTag text="React" image="./src/images/React.png" />
-                <SkillTag text="Tailwind CSS" image="./src/images/Tailwind.png" />
-                <SkillTag text="Git" image="./src/images/GIT.png" />
+                <SkillTag text="Node.js" image="/images/Node.png" />
+                <SkillTag text="React" image="/images/React.png" />
+                <SkillTag text="Tailwind CSS" image="/images/Tailwind.png" />
+                <SkillTag text="Git" image="/images/GIT.png" />
             </div>
         </div>
     </section>

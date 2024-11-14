@@ -1,23 +1,23 @@
 .section-about {
-    background-image: url('./src/images/backgrownd.jpg');
+    background-image: url('/images/backgrownd.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .section-projects {
-    background-image: url('./src/images/backgrownd.jpg');
+    background-image: url('/images/backgrownd.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .section-skills {
-    background-image: url('./src/images/backgrownd.jpg');
+    background-image: url('/images/backgrownd.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .section-contact {
-    background-image: url('./src/images/backgrownd.jpg');
+    background-image: url('/images/backgrownd.jpg');
     background-size: cover;
     background-position: center;
 }
