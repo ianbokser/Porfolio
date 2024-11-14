@@ -2,6 +2,7 @@ import React from 'react';
 import { ProfileImage } from '../ProfileImage';
 import { SkillTag } from '../SkillTag';
 import 'font-awesome/css/font-awesome.min.css';
+import './AboutMe.css'
 
 export const AboutMe = () => {
   return (

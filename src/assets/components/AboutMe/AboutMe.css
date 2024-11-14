@@ -2,6 +2,7 @@
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     background-size: 400%;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow 5s linear infinite;
 }
