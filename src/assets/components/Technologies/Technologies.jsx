@@ -1,5 +1,5 @@
 import React from 'react'
-import { SkillTag } from './SkillTag'
+import { SkillTag } from '../SkillTag/SkillTag'
 
 export const Technologies = () => {
   return (

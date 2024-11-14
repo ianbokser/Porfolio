@@ -1,6 +1,6 @@
 import React from 'react';
-import { ProfileImage } from '../ProfileImage';
-import { SkillTag } from '../SkillTag';
+import { ProfileImage } from '../ProfileImage/ProfileImage';
+import { SkillTag } from '../SkillTag/SkillTag';
 import 'font-awesome/css/font-awesome.min.css';
 import './AboutMe.css'
 

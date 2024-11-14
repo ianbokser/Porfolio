@@ -1,9 +1,9 @@
 import React from 'react'
-import { SocialLink } from './SocialLink'
+import { SocialLink } from '../SocialLink/SocialLink'
 
 export const Footer = () => {
   return (
-    <footer className="py-6 bg-gray-900">
+    <footer className="py-6 bg-gray-900 w-full rounded-t-lg">
       <div className="container mx-auto text-center text-gray-400">
         <p>© 2024 Ian Bokser. Todos los derechos reservados.</p>
         <div className="mt-4">

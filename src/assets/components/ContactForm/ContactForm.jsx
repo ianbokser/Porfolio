@@ -14,7 +14,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
+    <form onSubmit={handleSubmit} className="bg-white w-full p-6 rounded-lg shadow-lg">
       <div className="mb-4">
         <label className="block text-gray-700 font-medium mb-2" htmlFor="name">
           Nombre

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Header } from '../components/Header';
+import { Header } from '../components/Header/Header';
 import { AboutMe } from '../components/AboutMe/AboutMe';
-import { Projects } from '../components/Projects';
-import { Skills } from '../components/Skills';
+import { Projects } from '../components/Projects/Projects';
+import { Skills } from '../components/Skills/Skills';
 import { ContactForm } from '../components/ContactForm/ContactForm';
-import { Footer } from '../components/Footer';
-import { Technologies } from '../components/Technologies';
+import { Footer } from '../components/Footer/Footer';
+import { Technologies } from '../components/Technologies/Technologies';
 import './Main.css';
 
 export const Main = () => {
@@ -111,12 +111,15 @@ export const Main = () => {
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[3] = el)} id="Contacto" className="section-contact min-h-screen flex items-center justify-center transition-opacity duration-700">
-          <div className="w-full px-4">
+        <section
+          ref={(el) => (sectionRefs.current[3] = el)}
+          id="Contacto"
+          className="section-contact min-h-screen flex flex-col items-center justify-center transition-opacity duration-700">
+          <div className="flex items-center justify-center w-full px-4 flex-1">
             <ContactForm />
           </div>
+          <Footer className="mt-auto w-full" />
         </section>
-        <Footer />
       </div>
     </div>
   );
