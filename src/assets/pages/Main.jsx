@@ -85,7 +85,7 @@ export const Main = () => {
   return (
     <div className="bg-gray-900 min-h-screen flex justify-center max-w-screen-lg mx-auto">
       <div className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-gray-200 min-h-screen w-full max-w-screen-lg">
-        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about border-r-2 border-l-2 border-black min-h-screen px-5 flex flex-col lg:flex-row lg:justify-between transition-opacity duration-700">
+        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about min-h-screen px-5 flex flex-col lg:flex-row lg:justify-between transition-opacity duration-700">
           <Header />
           <div className="w-full my-6 lg:mr-12">
             <AboutMe />
@@ -96,19 +96,19 @@ export const Main = () => {
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[1] = el)} id="Proyectos" className="section-projects border-r-2  border-t-4 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[1] = el)} id="Proyectos" className="section-projects border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
           <div className="w-full">
             <Projects />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills border-r-2  border-t-4 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
           <div className="w-full">
             <Skills />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[3] = el)} id="Contacto" className="section-contact border-r-2  border-t-4 border-l-2 border-black min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[3] = el)} id="Contacto" className="section-contact border-t-4 border-black min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
           <div className="flex items-center justify-center w-full flex-1">
             <ContactForm />
           </div>
