@@ -14,12 +14,8 @@ export const AboutMe = () => {
           <p className="text-lg md:text-xl text-gray-800 mt-4">
             Desarrollador web <b>Full stack</b> y estudiante en <b>Licenciatura en Sistemas</b>.
           </p>
-          <div className="mt-6 flex items-center justify-start">
-            <a
-              href="/curriculum/Ian Carlos Bokser ES.pdf"
-              download
-              className="a-rainbow-text inline-flex items-center justify-center text-lg font-semibold rounded-full bg-blue-100 text-white px-4 py-2 transition-transform transform hover:scale-105"
-            >
+          <div className="centrado mt-6 flex items-center justify-start">
+            <a href="/curriculum/Ian Carlos Bokser ES.pdf" download className=" a-rainbow-text inline-flex items-center justify-center text-lg font-semibold rounded-full bg-blue-100 text-white px-4 py-2 transition-transform transform hover:scale-105">
               <i className="fa fa-arrow-circle-down mr-2" aria-hidden="true"></i>
               <span className="rainbow-text">Descargar CV</span>
             </a>
