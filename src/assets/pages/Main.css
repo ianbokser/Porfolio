@@ -52,3 +52,18 @@
     padding: 0 4rem 2rem 4rem;
 }
 }
+
+@media (max-width: 768px) {
+    .section-about {
+        padding: 0; 
+        width: 100vw; 
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    .section-about .flex {
+        width: 100%; 
+    }
+}
