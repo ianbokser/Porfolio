@@ -2,7 +2,7 @@ import React from 'react';
 import { ProfileImage } from '../ProfileImage/ProfileImage';
 import { SkillTag } from '../SkillTag/SkillTag';
 import 'font-awesome/css/font-awesome.min.css';
-import './AboutMe.css'
+import './AboutMe.css';
 
 export const AboutMe = () => {
   return (
@@ -18,7 +18,7 @@ export const AboutMe = () => {
             <a
               href="/curriculum/Ian Carlos Bokser ES.pdf"
               download
-              className=" a-rainbow-text inline-flex items-center justify-center text-lg font-semibold rounded-full bg-blue-100 text-blue-800 px-4 py-2 transition-transform transform hover:scale-105"
+              className="a-rainbow-text inline-flex items-center justify-center text-lg font-semibold rounded-full bg-blue-100 text-white px-4 py-2 transition-transform transform hover:scale-105"
             >
               <i className="fa fa-arrow-circle-down mr-2" aria-hidden="true"></i>
               <span className="rainbow-text">Descargar CV</span>

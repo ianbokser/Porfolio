@@ -1,5 +1,6 @@
+/* Efecto arcoíris en escala de grises */
 .rainbow-text {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(90deg, #000000, #555555, #999999, #555555, #000000);
     background-size: 400%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -8,20 +9,20 @@
 }
 
 @keyframes rainbow {
-0% {
-    background-position: 0%;
-}
-100% {
-    background-position: 400%;
-}
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }
 
 .a-rainbow-text {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-background-color: #bfdbfe; 
-color: #1e40af; 
-border-radius: 9999px; 
-padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bfdbfe;
+    color: #ffffff; 
+    border-radius: 9999px; 
+    padding: 10px 20px;
 }

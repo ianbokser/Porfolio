@@ -1,21 +1,17 @@
 import React from 'react'
 import { SkillTag } from '../SkillTag/SkillTag'
 
-export const Technologies = () => {
+export const WorkTools = () => {
   return (
     <section className="bg-gradient-to-b from-blue-200 to-gray-800 rounded-lg shadow-lg px-6 md:px-12 py-16 h-96">
         <div className="flex justify-center">
-          <p className="text-lg font-bold">Lenguajes de Programación</p>
+          <p className="text-lg font-bold">herramientas de trabajo</p>
         </div>
         <div className="flex items-center flex-col mb-2">
             <div className="mt-4 flex flex-wrap gap-2 justify-center">
-                <SkillTag text="HTML" image="/images/HTML.png"/>
-                <SkillTag text="CSS" image="/images/CSS.webp"/>
-                <SkillTag text="JavaScript" image="/images/Javascript.png" />
-                <SkillTag text="Java" image="/images/Java.webp"/>
-                <SkillTag text="Assembly ARM" image="/images/Assembly.png" />
-                <SkillTag text="SQL" image="/images/SQL.png" />
-                <SkillTag text="Python" image="/images/Python.jpeg"/>
+            <SkillTag text="Jira" image="/images/jira.png"/>
+                <SkillTag text="Slack" image="/images/Slack.jpg"/>
+                <SkillTag text="GitHub" image="/images/github.jfif" />
             </div>
         </div>
         <div className="flex justify-center">
@@ -27,8 +23,6 @@ export const Technologies = () => {
                 <SkillTag text="React" image="/images/React.png" />
                 <SkillTag text="Tailwind CSS" image="/images/Tailwind.png" />
                 <SkillTag text="Git" image="/images/GIT.png" />
-                <SkillTag text="WireShark" image="/images/WireShark.png" />
-                <SkillTag text="Postman" image="/images/Postman.jpg" />
             </div>
         </div>
     </section>

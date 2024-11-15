@@ -6,6 +6,7 @@ import { Skills } from '../components/Skills/Skills';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Footer } from '../components/Footer/Footer';
 import { Technologies } from '../components/Technologies/Technologies';
+import { WorkTools } from '../components/WorkTools/WorkTools';
 import './Main.css';
 
 export const Main = () => {
@@ -94,7 +95,7 @@ export const Main = () => {
               <Technologies />
             </div>
             <div className="w-1/2">
-              <Technologies />
+              <WorkTools />
             </div>
           </div>
         </section>
