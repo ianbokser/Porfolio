@@ -9,7 +9,7 @@ export const WorkTools = () => {
         </div>
         <div className="flex items-center flex-col mb-2">
             <div className="mt-4 flex flex-wrap gap-2 justify-center">
-            <SkillTag text="Jira" image="/images/jira.png"/>
+                <SkillTag text="Jira" image="/images/jira.png"/>
                 <SkillTag text="Slack" image="/images/Slack.jpg"/>
                 <SkillTag text="GitHub" image="/images/github.jfif" />
             </div>
