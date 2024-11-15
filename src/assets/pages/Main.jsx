@@ -15,8 +15,8 @@ export const Main = () => {
   const isScrolling = useRef(false);
   const scrollAccumulator = useRef(0);
   const scrollTimeout = useRef(null);
-  const touchStartY = useRef(0);  // Para rastrear el inicio de un toque
-  const touchEndY = useRef(0);    // Para rastrear el final del toque
+  const touchStartY = useRef(0);
+  const touchEndY = useRef(0);    
 
   const scrollToSection = (index) => {
     sectionRefs.current[index]?.scrollIntoView({
@@ -60,7 +60,6 @@ export const Main = () => {
     return () => window.removeEventListener('wheel', handleScroll);
   }, [currentIndex]);
 
-  // Detecta gestos de deslizamiento para pantallas táctiles
   useEffect(() => {
     const handleTouchStart = (e) => {
       touchStartY.current = e.touches[0].clientY;
@@ -76,10 +75,8 @@ export const Main = () => {
       if (isScrolling.current) return;
 
       if (touchDeltaY > 50 && currentIndex < sectionRefs.current.length - 1) {
-        // Desliza hacia arriba
         setCurrentIndex((prevIndex) => prevIndex + 1);
       } else if (touchDeltaY < -50 && currentIndex > 0) {
-        // Desliza hacia abajo
         setCurrentIndex((prevIndex) => prevIndex - 1);
       }
 
@@ -125,30 +122,30 @@ export const Main = () => {
   return (
     <div className="bg-gray-900 min-h-screen flex justify-center max-w-screen-lg mx-auto">
       <div className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-gray-200 min-h-screen w-full max-w-screen-lg">
-        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about min-h-screen px-5 flex flex-col lg:flex-row lg:justify-between transition-opacity duration-700">
+        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about border-r-2 border-l-2 border-black min-h-screen px-5 flex flex-col lg:flex-row lg:justify-between transition-opacity duration-700">
           <Header />
           <div className="w-full my-6 lg:mr-12">
             <AboutMe />
           </div>
-          <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-0 w-full">
+          <div className="flex flex-col lg:flex-row gap-2 mt-6 lg:mt-0 w-full">
             <Technologies />
             <WorkTools />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[1] = el)} id="Proyectos" className="section-projects min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[1] = el)} id="Proyectos" className="section-projects border-r-2  border-t-2 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
           <div className="w-full">
             <Projects />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills border-r-2  border-t-2 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
           <div className="w-full">
             <Skills />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[3] = el)} id="Contacto" className="section-contact min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[3] = el)} id="Contacto" className="section-contact border-r-2  border-t-2 border-l-2 border-black min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
           <div className="flex items-center justify-center w-full flex-1">
             <ContactForm />
           </div>
