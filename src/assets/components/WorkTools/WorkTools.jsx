@@ -3,9 +3,9 @@ import { SkillTag } from '../SkillTag/SkillTag'
 
 export const WorkTools = () => {
   return (
-    <section className="bg-gradient-to-b from-blue-200 to-gray-800 rounded-lg shadow-lg px-6 md:px-12 py-16 h-96">
+    <section className="bg-gradient-to-b from-blue-200 to-gray-800 rounded-lg shadow-lg px-6 md:px-12 py-8 h-auto lg:h-96 mb-4 lg:mb-0">
         <div className="flex justify-center">
-          <p className="text-lg font-bold">herramientas de trabajo</p>
+            <p className="text-lg font-bold">herramientas de trabajo</p>
         </div>
         <div className="flex items-center flex-col mb-2">
             <div className="mt-4 flex flex-wrap gap-2 justify-center">

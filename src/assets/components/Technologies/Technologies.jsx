@@ -3,7 +3,7 @@ import { SkillTag } from '../SkillTag/SkillTag'
 
 export const Technologies = () => {
   return (
-    <section className="bg-gradient-to-b from-blue-200 to-gray-800 rounded-lg shadow-lg px-6 md:px-12 py-16 h-96">
+<section className="bg-gradient-to-b from-blue-200 to-gray-800 rounded-lg shadow-lg px-6 md:px-12 py-8 h-auto lg:h-96 mb-4 lg:mb-0">
         <div className="flex justify-center">
           <p className="text-lg font-bold">Lenguajes de Programación</p>
         </div>
