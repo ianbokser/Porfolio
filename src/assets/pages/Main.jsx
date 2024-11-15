@@ -15,8 +15,6 @@ export const Main = () => {
   const isScrolling = useRef(false);
   const scrollAccumulator = useRef(0);
   const scrollTimeout = useRef(null);
-  const touchStartY = useRef(0);
-  const touchEndY = useRef(0);    
 
   const scrollToSection = (index) => {
     sectionRefs.current[index]?.scrollIntoView({
@@ -61,41 +59,6 @@ export const Main = () => {
   }, [currentIndex]);
 
   useEffect(() => {
-    const handleTouchStart = (e) => {
-      touchStartY.current = e.touches[0].clientY;
-    };
-
-    const handleTouchMove = (e) => {
-      touchEndY.current = e.touches[0].clientY;
-    };
-
-    const handleTouchEnd = () => {
-      const touchDeltaY = touchStartY.current - touchEndY.current;
-
-      if (isScrolling.current) return;
-
-      if (touchDeltaY > 50 && currentIndex < sectionRefs.current.length - 1) {
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-      } else if (touchDeltaY < -50 && currentIndex > 0) {
-        setCurrentIndex((prevIndex) => prevIndex - 1);
-      }
-
-      touchStartY.current = 0;
-      touchEndY.current = 0;
-    };
-
-    window.addEventListener('touchstart', handleTouchStart, { passive: false });
-    window.addEventListener('touchmove', handleTouchMove, { passive: false });
-    window.addEventListener('touchend', handleTouchEnd);
-
-    return () => {
-      window.removeEventListener('touchstart', handleTouchStart);
-      window.removeEventListener('touchmove', handleTouchMove);
-      window.removeEventListener('touchend', handleTouchEnd);
-    };
-  }, [currentIndex]);
-
-  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -127,25 +90,25 @@ export const Main = () => {
           <div className="w-full my-6 lg:mr-12">
             <AboutMe />
           </div>
-          <div className="flex flex-col lg:flex-row gap-2 mt-6 lg:mt-0 w-full">
+          <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-0 w-full">
             <Technologies />
             <WorkTools />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[1] = el)} id="Proyectos" className="section-projects border-r-2  border-t-2 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[1] = el)} id="Proyectos" className="section-projects border-r-2  border-t-4 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
           <div className="w-full">
             <Projects />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills border-r-2  border-t-2 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills border-r-2  border-t-4 border-l-2 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
           <div className="w-full">
             <Skills />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[3] = el)} id="Contacto" className="section-contact border-r-2  border-t-2 border-l-2 border-black min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[3] = el)} id="Contacto" className="section-contact border-r-2  border-t-4 border-l-2 border-black min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
           <div className="flex items-center justify-center w-full flex-1">
             <ContactForm />
           </div>
