@@ -1,0 +1,10 @@
+header {
+    width: 100%; 
+    text-align: center; 
+}
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+        width: 100%; 
+    }
+}
