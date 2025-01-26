@@ -11,6 +11,7 @@ export const Projects = () => {
           <ProjectCard title="Calculadora Impuestos Steam" description="BrIAn es un chatbot de inteligencia artificial para Discord diseñado para interactuar en canales de voz y proporcionar respuestas inteligentes en tiempo real y capacidad de pasar musica." imgSrc="/images/calculadora_impuestos_steam.png" demoLink="" codeLink="https://github.com/ianbokser/calculadora_impuestos_steam"/>
           <ProjectCard title="Chat" description="BrIAn es un chatbot de inteligencia artificial para Discord diseñado para interactuar en canales de voz y proporcionar respuestas inteligentes en tiempo real y capacidad de pasar musica." imgSrc="/images/chat.png" demoLink="" codeLink="https://github.com/ianbokser/chat"/>
           <ProjectCard title="Redes" description="Trabajo práctico de la materia Sistemas Operativos y Redes en el que configuramos y simulamos redes en Cisco Packet Tracer." imgSrc="/images/redes.png" demoLink="" codeLink="https://github.com/ianbokser/redes"/>
+          <ProjectCard title="e-commerce" description="Proyecto donde desarrollé un e-commerce con React." imgSrc="/images/e-comerce.png" demoLink="" codeLink="https://github.com/ianbokser/e-comerceReact.git"/>
       </div>
     </section>
   )
