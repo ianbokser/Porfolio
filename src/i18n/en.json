@@ -1,0 +1,16 @@
+{
+    "greeting": "Hi, I'm Ian Bokser!",
+    "description": "<b>Full stack</b> web developer and student in <b>Bachelor of Systems</b>.",
+    "downloadCv": "Download CV",
+    "cvPath": "/curriculum/Ian Carlos Bokser EN.pdf",
+    "portfolio": "My Portfolio",
+    "sections": {
+        "aboutMe": "About Me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "programmingLanguages": "Programming Languages",
+    "technologies": "Technologies",
+    "tools": "Tools"
+}
