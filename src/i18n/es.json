@@ -10,7 +10,23 @@
         "skills": "Skills",
         "contact": "Contacto"
     },
+    "title": {
+        "brIAn":"BrIAn",
+        "set_paddel_house":"Set Paddel House",
+        "chat":"Chat",
+        "calculadora_impuestos_steam":"Calculadora Impuestos Steam",
+        "redes":"Redes",
+        "ecommerce":"e-commerce"
+    },
     "programmingLanguages": "Lenguajes de Programación",
     "technologies": "Tecnologías",
-    "tools": "Herramientas"
+    "tools": "Herramientas",
+    "projects": "Proyectos",
+    "brIAn": "BrIAn es un chatbot de inteligencia artificial para Discord diseñado para interactuar en canales de voz y proporcionar respuestas inteligentes en tiempo real y capacidad de pasar musica.",
+    "set_paddel_house": "Set Paddel House WEB es una plataforma web diseñada para ofrecer una experiencia interactiva y funcional en torno a la gestión de actividades de pádel.",
+    "chat": "Chat en tiempo real entre varios usuarios con Node.js y Socket.io",
+    "calculadora_impuestos_steam":"Aplicación web para calcular los impuestos de steam en Argentina.",
+    "redes": "Trabajo práctico de la materia Sistemas Operativos y Redes en el que configuramos y simulamos redes en Cisco Packet Tracer.",
+    "ecommerce": "Proyecto donde desarrollé un e-commerce con React."
+    
 }

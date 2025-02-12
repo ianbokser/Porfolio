@@ -7,6 +7,7 @@ import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Footer } from '../components/Footer/Footer';
 import { Technologies } from '../components/Technologies/Technologies';
 import { WorkTools } from '../components/WorkTools/WorkTools';
+import { Certificates } from '../components/certificates/certificates';
 import './Main.css';
 
 export const Main = () => {
@@ -103,8 +104,9 @@ export const Main = () => {
         </section>
 
         <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
-          <div className="w-full">
-            <Skills />
+          <div className="flex flex-col items-center justify-evenly w-full">
+            <Certificates/>
+            {/* <Skills /> */}
           </div>
         </section>
 
