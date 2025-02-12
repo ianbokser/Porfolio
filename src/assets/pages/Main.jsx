@@ -2,12 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Header } from '../components/Header/Header';
 import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Projects } from '../components/Projects/Projects';
-import { Skills } from '../components/Skills/Skills';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Footer } from '../components/Footer/Footer';
 import { Technologies } from '../components/Technologies/Technologies';
 import { WorkTools } from '../components/WorkTools/WorkTools';
-import { Certificates } from '../components/certificates/certificates';
+import { Certificates } from '../components/Certificates/Certificates';
 import './Main.css';
 
 export const Main = () => {
