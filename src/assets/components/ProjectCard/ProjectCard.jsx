@@ -7,7 +7,7 @@ export const ProjectCard = ({ title, description, imgSrc, demoLink, codeLink }) 
                 <img
                     src={imgSrc}
                     alt={title}
-                    className="w-full h-40 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                    className="w-full h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>

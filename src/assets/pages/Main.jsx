@@ -97,16 +97,16 @@ export const Main = () => {
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[1] = el)} id="Proyectos" className="section-projects border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
-          <div className="w-full">
-            <Projects />
-          </div>
-        </section>
-
-        <section ref={(el) => (sectionRefs.current[2] = el)} id="Skills" className="section-skills border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[1] = el)} id="Certificados" className="section-skills border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
           <div className="flex flex-col items-center justify-evenly w-full">
             <Certificates/>
             {/* <Skills /> */}
+          </div>
+        </section>
+
+        <section ref={(el) => (sectionRefs.current[2] = el)} id="Proyectos" className="section-projects border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+          <div className="w-full">
+            <Projects />
           </div>
         </section>
 

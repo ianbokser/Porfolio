@@ -9,7 +9,6 @@ import './Header.css';
 export const Header = () => {
   const { SelectedLanguage } = useSelectedLanguage(); 
   const t = translations[SelectedLanguage];
-
   return (
     <header className="bg-gray-800/80 shadow-md backdrop-blur-md rounded-b-lg w-full flex items-center">
       <div className="w-full max-w-screen-lg mx-auto flex flex-col items-center py-2 ml-32">
@@ -17,8 +16,8 @@ export const Header = () => {
         <nav className="flex space-x-6 justify-center w-full mt-2">
           {[
             t.sections.aboutMe,
+            t.sections.certificates,
             t.sections.projects,
-            t.sections.skills,
             t.sections.contact
           ].map((section) => (
             <Link

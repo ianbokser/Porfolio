@@ -6,8 +6,8 @@
     "portfolio": "Mi Portafolio",
     "sections": {
         "aboutMe": "Sobre Mí",
+        "certificates": "Certificados",
         "projects": "Proyectos",
-        "skills": "Skills",
         "contact": "Contacto"
     },
     "title": {
@@ -27,6 +27,13 @@
     "chat": "Chat en tiempo real entre varios usuarios con Node.js y Socket.io",
     "calculadora_impuestos_steam":"Aplicación web para calcular los impuestos de steam en Argentina.",
     "redes": "Trabajo práctico de la materia Sistemas Operativos y Redes en el que configuramos y simulamos redes en Cisco Packet Tracer.",
-    "ecommerce": "Proyecto donde desarrollé un e-commerce con React."
-    
+    "ecommerce": "Proyecto donde desarrollé un e-commerce con React.",
+    "certificates": "Certificados",
+    "certificatesTitle": {
+        "desarrollo_Web":"Desarrollo Web",
+        "javaScript":"JavaScript",
+        "react_Js":"React Js",
+        "programación_backend_I_desarrollo_avanzado_de_backend":"Programación Backend I - Desarrollo Avanzado de Backend",
+        "programación_backend_II_desarrollo_de_aplicaciones_web":"Programación Backend II - Desarrollo de Aplicaciones Web"
+    }
 }
