@@ -10,10 +10,10 @@ export const Header = () => {
   const { SelectedLanguage } = useSelectedLanguage(); 
   const t = translations[SelectedLanguage];
   return (
-    <header className="bg-gray-800/80 shadow-md backdrop-blur-md rounded-b-lg w-full flex items-center">
-      <div className="w-full max-w-screen-lg mx-auto flex flex-col items-center py-2 ml-32">
+    <header className="bg-gray-800/80 shadow-md backdrop-blur-md rounded-b-lg w-full flex flex-col  md:pl-40 md:flex-row items-center justify-center px-4 sm:space-x-32">
+      <div className="flex flex-col items-center">
         <Logo />
-        <nav className="flex space-x-6 justify-center w-full mt-2">
+        <nav className="flex space-x-4 mt-2">
           {[
             t.sections.aboutMe,
             t.sections.certificates,
@@ -32,7 +32,7 @@ export const Header = () => {
           ))}
         </nav>
       </div>
-      <div className="mr-16">
+      <div className="mt-2 md:mt-0">
         <Language />
       </div>
     </header>
