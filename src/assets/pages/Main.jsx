@@ -83,27 +83,27 @@ export const Main = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 min-h-screen flex justify-center max-w-screen-lg mx-auto">
+    <div className="bg-gray-900 min-h-screen flex justify-center max-w-screen-lg mx-auto max-h-screen-lg">
       <div className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-gray-200 min-h-screen w-full max-w-screen-lg">
-        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about min-h-screen px-5 flex flex-col lg:flex-row lg:justify-between transition-opacity duration-700">
+        <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about min-h-screen flex flex-col transition-opacity duration-700">
           <Header />
-          <div className="w-full my-6 lg:mr-12">
-            <AboutMe />
-          </div>
-          <div className="flex flex-col lg:flex-row gap-4 mt-6 lg:mt-0 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full lg:my-12">
+            <div className="lg:col-span-2">
+              <AboutMe />
+            </div>
             <Technologies />
             <WorkTools />
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[1] = el)} id="Certificados" className="section-skills border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[1] = el)} id="Certificados" className="section-skills border-t-4 border-black min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
           <div className="flex flex-col items-center justify-evenly w-full">
             <Certificates/>
             {/* <Skills /> */}
           </div>
         </section>
 
-        <section ref={(el) => (sectionRefs.current[2] = el)} id="Proyectos" className="section-projects border-t-4 border-black min-h-screen flex items-center justify-center transition-opacity duration-700 px-5">
+        <section ref={(el) => (sectionRefs.current[2] = el)} id="Proyectos" className="section-projects border-t-4 border-black min-h-screen flex flex-col items-center justify-center transition-opacity duration-700 px-5">
           <div className="w-full">
             <Projects />
           </div>

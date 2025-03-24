@@ -1,10 +1,33 @@
 header {
-    width: 100%; 
-    text-align: center; 
+    margin: 0; /* Ensure no margin above the header */
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 @media (max-width: 768px) {
     nav {
+        flex-wrap: wrap;
         justify-content: center;
-        width: 100%; 
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mt-2 {
+        margin-top: 0 !important;
     }
 }
