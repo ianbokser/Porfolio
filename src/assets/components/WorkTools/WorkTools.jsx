@@ -7,7 +7,7 @@ export const WorkTools = () => {
   const { SelectedLanguage } = useSelectedLanguage();
   const t = translations[SelectedLanguage];
   return (
-    <section className="bg-gradient-to-b from-blue-200 to-gray-800 rounded-lg shadow-lg px-6 md:px-12 py-8 h-auto lg:h-96 mb-4 lg:mb-0">
+    <section className="bg-gradient-to-b from-blue-200 to-gray-800 rounded-lg shadow-lg px-6 w-full md:px-12 py-8 h-auto">
         <div className="flex justify-center">
             <p className="text-lg font-bold">{t.tools}</p>
         </div>
