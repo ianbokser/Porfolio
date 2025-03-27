@@ -10,10 +10,10 @@ export const Header = () => {
   const { SelectedLanguage } = useSelectedLanguage(); 
   const t = translations[SelectedLanguage];
   return (
-    <header className="bg-gray-800/80 shadow-md backdrop-blur-md rounded-b-lg w-full flex flex-col  md:pl-40 md:flex-row items-center justify-center px-4 sm:space-x-32">
+    <header className="bg-gray-800/80 shadow-md backdrop-blur-md rounded-b-lg w-full flex flex-col  md:pl-40 md:flex-row items-center justify-center px-4 sm:space-x-32 m-0">
       <div className="flex flex-col items-center">
         <Logo />
-        <nav className="flex space-x-4 mt-2">
+        <nav className="flex space-x-0 sm:space-x-4 sm:mt-2">
           {[
             t.sections.aboutMe,
             t.sections.certificates,

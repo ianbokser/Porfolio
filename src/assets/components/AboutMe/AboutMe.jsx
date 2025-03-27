@@ -14,12 +14,12 @@ export const AboutMe = () => {
       <div className="flex items-center md:flex-row ">
         <ProfileImage />
         <div className="ml-0 md:ml-12 md:mt-0 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-white-900">{t.greeting}</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold text-white-900">{t.greeting}</h1>
           <p
-            className="text-lg md:text-xl text-gray-800 sm:mt-4"
+            className="text-sm sm:text-lg md:text-xl text-gray-800 sm:mt-4"
             dangerouslySetInnerHTML={{ __html: t.description }}
           ></p>
-          <div className="centrado mt-6 flex items-center justify-start">
+          <div className="centrado mt-2 sm:mt-6 flex items-center justify-start">
             <a
               href={t.cvPath}
               download

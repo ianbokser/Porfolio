@@ -1,5 +1,5 @@
 header {
-    margin: 0; /* Ensure no margin above the header */
+    margin: 0; 
     padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
@@ -25,9 +25,5 @@ nav {
     header {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .mt-2 {
-        margin-top: 0 !important;
     }
 }
