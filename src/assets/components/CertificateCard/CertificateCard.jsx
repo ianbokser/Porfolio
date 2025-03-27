@@ -18,7 +18,7 @@ export const CertificateCard = ({ title, issuedBy, imgSrc }) => {
     return (
         <>
             <div className="bg-gradient-to-b from-blue-800 to-blue-600 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden max-w-sm mx-auto flex flex-col">
-                <div className="relative group">
+                <div className="relative group  aspect[3/4]">
                     <img
                         src={imgSrc}
                         alt={title}

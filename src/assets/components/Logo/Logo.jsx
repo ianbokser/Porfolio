@@ -7,7 +7,7 @@ export const Logo = () => {
   const t = translations[SelectedLanguage];
 
   return (
-    <div className="text-2xl font-bold text-white flex justify-center items-center">
+    <div className="text-xl font-bold text-white flex justify-center items-center sm:text-2xl">
       <a href="#inicio">{t.portfolio}</a>
     </div>
   );

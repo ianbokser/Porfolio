@@ -87,12 +87,16 @@ export const Main = () => {
       <div className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-gray-200 min-h-screen w-full max-w-screen-lg">
         <section ref={(el) => (sectionRefs.current[0] = el)} id="Sobre Mí" className="section-about min-h-screen flex flex-col transition-opacity duration-700">
           <Header />
-          <div className="grid grid-cols-1 sm: lg:grid-cols-2 gap-8 w-full lg:my-12 sm:w-full">
-            <div className="col-span-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full lg:my-12 p-4">
+            <div className="col-span-1 lg:col-span-2">
               <AboutMe />
             </div>
-            <Technologies />
-            <WorkTools />
+            <div className="col-span-1 flex justify-center items-center">
+              <Technologies />
+            </div>
+            <div className="col-span-1 flex justify-center items-center">
+              <WorkTools />
+            </div>
           </div>
         </section>
 
